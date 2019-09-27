@@ -44,6 +44,21 @@ h1, p{
 */
 }
 
+.container{
+	background:#fff;
+	padding:20px;
+	margin:20px auto;
+	border:10px double #000;
+	border-bottom: 2px solid #f00;
+	border-radius:20px 10px;
+	width:80%;
+	box-shadow: 10px 10px 10px 1px rgba(0,0,0,.5);
+}
+
+.nm{
+	margin:0;
+	text-shadow:3px 3px 3px #aaf;
+}
 
 
 

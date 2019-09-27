@@ -45,13 +45,15 @@ h1, p{
 }
 
 .container{
+	box-sizing:border-box;
 	background:#fff;
 	padding:20px;
 	margin:20px auto;
 	border:10px double #000;
-	border-bottom: 2px solid #f00;
+/*	border-bottom: 2px solid #f00;*/
 	border-radius:20px 10px;
 	width:80%;
+/*	width:800px;*/
 	box-shadow: 10px 10px 10px 1px rgba(0,0,0,.5);
 }
 
@@ -60,9 +62,29 @@ h1, p{
 	text-shadow:3px 3px 3px #aaf;
 }
 
+#wt{
+	width:50%;
+	max-width:200px;
+	min-width:100px;
+	background:#ccc;
+}
 
 
+.dib{
+	width:200px;
+	background:#ccc;
+	display:inline-block;
+	vertical-align: top;
+}
 
+/*
+.dt{
+	width:10000px;
+	background:#f00;
+	padding:20px;
+	margin:10px;
+}
+*/
 
 
 

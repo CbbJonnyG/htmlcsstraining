@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Responsive</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style>
+/*presets*/
+			*{
+				font-family: helvetica;
+				box-sizing: border-box;
+				margin:0;
+				padding:0;
+			}
+			.container{
+				display:flex;
+				max-width:800px;
+				margin:0 auto;
+			}
+			
+			.container div{
+				padding:20px;
+				border:1px solid #ccc;
+			}
+			
+			.c25{
+				width:25%;
+			}
+			.c50{
+				width:50%;
+			}
+			
+			
+			@media screen and (max-width:540px){
+				.container{
+					display:block;
+				}
+				.container div{
+					width:100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="c25">
+				<p>Excepteur sint occaecat cupidatat non proident, sunt in
+				culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="c50">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+				nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+				culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="c25">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore magna aliqua. </p>
+			</div>
+		</div>
+		
+		
+		
+	</body>
+</html>

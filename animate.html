@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Animation</title>
+		<style>
+/*presets*/
+			*{
+				box-sizing: border-box;
+				margin:0;
+				padding:0;
+				font-family:helvetica;
+			}
+/* default style*/
+			#hero{
+				background:#333;
+				height:100vh;
+				display:flex;
+				align-items: center;
+				justify-content: center;
+			}
+			
+			#joe{
+				display: inline-block;
+				padding:20px;
+				background:#f00;
+				color:#fff;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight:bold;
+				border-radius:15px;
+				animation: bob 2s linear infinite;
+			}
+			
+			@keyframes bob{
+				0%{
+					background:#f00;
+					color:#fff;
+					transform: translate(0px, 0px);
+/*					transform:rotateZ(0deg);*/
+/*					transform:scale(1,1);*/
+				}
+				50%{
+					background:#000;
+					color:#f00;
+					transform: translate(50px, -20px);
+/*					transform:rotateZ(180deg);*/
+/*					transform:scale(.5,.5);*/
+				}
+				100%{
+					background:#f00;
+					color:#fff;
+					transform: translate(0px, 0px);
+/*					transform:rotateZ(360deg);*/
+/*					transform:scale(1,1);*/
+				}
+			}
+
+			#joe:hover{
+				color:#f00;
+				background:#000;
+
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="hero">
+			<p><a href="#" id="joe">Animate on hover</a></p>
+		</div>
+	</body>
+</html>
